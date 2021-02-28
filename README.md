@@ -16,3 +16,12 @@ Execute
 ```bash
 npm run dev
 ```
+
+commandos git:
+- git clone
+- git branch
+- git checkout -b mi-rama
+- git add .
+- git commit -m "mi mensaje"
+- git push
+- git pull
