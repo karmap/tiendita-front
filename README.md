@@ -9,7 +9,6 @@ Install
 
 ```bash
 npm i
-```
 
 Execute
 
