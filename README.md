@@ -6,8 +6,13 @@ This example shows how to use [Tailwind CSS](https://tailwindcss.com/) (v2) with
 
 ## How to use
 
+Install
+
+```bash
+npm i
+
 Execute
 
 ```bash
-npx run dev
+npm run dev
 ```
