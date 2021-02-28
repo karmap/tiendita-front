@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function IndexPage() {
   return (
     <div>
-      pagina de registro{' '}
+      Página de registro{' '}
         <ul>
             <Link href="/">
             <li>Regresar al Home</li>
