@@ -6,7 +6,7 @@ export default function IndexPage() {
       pagina de registro{' '}
         <ul>
             <Link href="/">
-            <li>ir al home</li>
+            <li>Regresar al Home</li>
             </Link>
         </ul>
 
