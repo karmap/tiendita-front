@@ -2,38 +2,65 @@ import Link from 'next/link'
 
 export default function IndexPage() {
   return (
-    <div>
-      Página de registro{' '}
-        <ul>
-            <Link href="/">
-            <li>Regresar al Home</li>
-            </Link>
-        </ul>
+    <div className="sm:container sm:mx-auto sm:w-80">
+      Página de Registro{' '}
+        <div className="box-content p-4 mt-20 bg-gray-100 shadow">
+          <nav>
+            <ul className="text-center flex space-x-4">
+              <Link href="/registro">
+              <li className="font-bold underline hover:underline focus:underline flex-1">Crear Cuenta</li>
+              </Link>
+              <Link href="/iniciarsesion">
+              <li className="hover:underline focus:underline flex-1">Iniciar Sesión</li>
+              </Link>
+            </ul>
+          </nav>
+          <div className="text-center mb-5 mt-5">
+            <span className="bg-blue-500 text-white">Conectar con Facebook</span>
+          </div>
 
-<div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
-    <div className="mb-4">
-      <label className="block text-grey-darker text-sm font-bold mb-2" for="username">
-        Username
-      </label>
-      <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="username" type="text" placeholder="Username"/>
-    </div>
-    <div className="mb-6">
-      <label className="block text-grey-darker text-sm font-bold mb-2" for="password">
-        Password
-      </label>
-      <input className="shadow appearance-none border border-red rounded w-full py-2 px-3 text-grey-darker mb-3" id="password" type="password" placeholder="******************"/>
-      <p className="text-red text-xs italic">Please choose a password.</p>
-    </div>
-    <div className="flex items-center justify-between">
-      <button className="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded" type="button">
-        Sign In
-      </button>
-      <a className="inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker" href="#">
-        Forgot Password?
-      </a>
-    </div>
-</div>
         
+          <div className="text-center">
+            <div><span>Ó</span></div>
+          </div>
+        <div className="rounded px-8 pt-6 pb-8 mb-4">
+            <form action="">
+                <div className="mb-4">
+                    <label for="name" className="block text-grey-darker text-sm font-bold mb-2">
+                        <span className="">Nombre</span>
+                        <input id="name" type="text" placeholder="" required autoComplete="text" className="focus:ring-2 focus:ring-blue-600 rounded w-full py-2 px-3 text-grey-darker mb-3 bg-transparent shadow" />
+                    </label>
+                </div>
+                <div className="mb-4">
+                    <label for="lastname" className="block text-grey-darker text-sm font-bold mb-2">
+                        <span className="">Apellido</span>
+                        <input id="lastname" type="text" placeholder="" required autoComplete="text" className="focus:ring-2 focus:ring-blue-600 rounded w-full py-2 px-3 text-grey-darker mb-3 bg-transparent shadow" />
+                    </label>
+                </div>
+                <div className="mb-4">
+                    <label for="username" className="block text-grey-darker text-sm font-bold mb-2">
+                        <span className="">Email</span>
+                        <input id="username" type="text" placeholder="" required autoComplete="email" className="focus:ring-2 focus:ring-blue-600 rounded w-full py-2 px-3 text-grey-darker mb-3 bg-transparent shadow" />
+                    </label>
+                </div>
+                <div className="mb-6">
+                    <label for="password" className="block text-grey-darker text-sm font-bold mb-2" >
+                        <span>Contraseña</span>
+                        <input id="password" type="password" placeholder="" required className="focus:ring-2 focus:ring-blue-600 rounded w-full py-2 px-3 text-grey-darker mb-3 bg-transparent shadow" />
+                    </label>
+                </div>
+                <div className="mb-6">
+                    <label for="confirmpass" className="block text-grey-darker text-sm font-bold mb-2" >
+                        <span>Confirmar contraseña</span>
+                        <input id="confirmpass" type="password" placeholder="" required className="focus:ring-2 focus:ring-blue-600 rounded w-full py-2 px-3 text-grey-darker mb-3 bg-transparent shadow" />
+                    </label>
+                </div>
+                <div className="text-center">
+                    <input className="bg-gray-500 hover:bg-gray-400 text-white py-2 px-4 rounded" type="submit" value="Registrar" />
+                </div>
+            </form>
+        </div>
+        </div>
     </div>
   )
 }
