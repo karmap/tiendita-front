@@ -5,8 +5,12 @@ import * as Yup from "yup";
 import axios from 'axios'
 // import { useState } from "react";
 import useRequest from '../hooks/use-request';
+import { useRouter } from 'next/router'
+
 
 export default function IndexPage() {
+
+    const router = useRouter()
 
     const { doRequest, errors } = useRequest({
         url: 'http://localhost:5000/v1/auth/register',
@@ -35,6 +39,7 @@ export default function IndexPage() {
                 email: data.email,
                 password: data.password
             });
+            router.push('/catalogo')
         }
     })
 

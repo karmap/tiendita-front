@@ -2,8 +2,11 @@ import Link from 'next/link'
 import HeaderSimple from '../components/header-simple';
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import { useRouter } from 'next/router'
 
 export default function IndexPage() {
+
+    const router = useRouter()
 
     const formik = useFormik({
         initialValues: {
@@ -20,6 +23,7 @@ export default function IndexPage() {
         onSubmit: valores => {
             console.log('env');
             console.log(valores);
+            router.push('/catalogo')
         }
     })
 
