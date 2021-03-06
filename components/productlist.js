@@ -13,8 +13,9 @@ const ProductList = ({ robots }) => {
               key={robot.id}
               id={robot.id}
               name={robot.name}
-              username={robot.username}
-              email={robot.email}
+              Color={robot.Color}
+              desc={robot.desc}
+              precio={robot.precio}
               />
           );
         })
