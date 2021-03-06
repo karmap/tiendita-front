@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from "react";
 import ProductList from '../components/productlist'
-import { robots } from './robots'
+import { robots } from '../components/./robots'
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Busqueda from '../components/busqueda';
