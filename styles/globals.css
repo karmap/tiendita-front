@@ -29,6 +29,13 @@ h2.link {
     @apply bg-gray-500 hover:bg-gray-400 text-white text-lg
         py-2 px-4 rounded m-4 cursor-pointer;
 }
+.label-btn {
+    @apply bg-gray-500 hover:bg-gray-400 text-white
+        py-4 px-4 rounded cursor-pointer;
+}
 .error {
     @apply my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-2;
+}
+p {
+    @apply font-serif;
 }
