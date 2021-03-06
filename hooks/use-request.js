@@ -1,10 +1,10 @@
 import axios from 'axios';
 import { useState } from 'react';
 
-const useRequest = ({ url, method, body, onSuccess }) => {
+const useRequest = ({ url, method, onSuccess }) => {
   const [errors, setErrors] = useState(null);
 
-  const doRequest = async () => {
+  const doRequest = async (body) => {
     try {
       setErrors(null);
       const response = await axios[method](url, body);

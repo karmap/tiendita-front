@@ -3,23 +3,14 @@ import HeaderSimple from '../components/header-simple';
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from 'axios'
-import { useState } from "react";
+// import { useState } from "react";
 import useRequest from '../hooks/use-request';
 
 export default function IndexPage() {
 
-    const [error, setError] = useState('')
-    const [name, setName] = useState('')
-    const [lastname, setLastname] = useState('')
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
-
     const { doRequest, errors } = useRequest({
         url: 'http://localhost:5000/v1/auth/register',
         method: 'post',
-        body: {
-            name, email, password
-        }
     })
 
     const formik = useFormik({
@@ -38,12 +29,12 @@ export default function IndexPage() {
                 .min(6, 'La contraseña debe tener al menos 6 caracteres')
                 .required('La contraseña es obligatorio'),
         }),
-        onSubmit: valores => {
-            setName(valores.name)
-            setLastname(valores.lastname)
-            setEmail(valores.email)
-            setPassword(valores.password)
-            doRequest();
+        onSubmit: data => {
+            doRequest({
+                name: `${data.name} ${data.lastname}`,
+                email: data.email,
+                password: data.password
+            });
         }
     })
 
