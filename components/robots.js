@@ -1,62 +1,72 @@
 export const robots = [
   {
     id: 1,
-    name: 'Leanne Graham',
-    username: 'Bret',
-    email: 'Sincere@april.biz'
+    name: 'Gorrito',
+    color: 'Rojo/Gris',
+    desc: 'Gorrito infantil rojo.',
+    precio: '$250'
   },
   {
     id: 2,
-    name: 'Ervin Howell',
-    username: 'Antonette',
-    email: 'Shanna@melissa.tv'
+    name: 'Jabones',
+    color: 'Verde',
+    desc: 'Jabón orgánico té verde.',
+    precio: '$150'
   },
   {
     id: 3,
-    name: 'Clementine Bauch',
-    username: 'Samantha',
-    email: 'Nathan@yesenia.net'
+    name: 'Abrigo',
+    color: 'Rojo',
+    desc: 'Abrigo rojo unitalla.',
+    precio: '$1500'
   },
   {
     id: 4,
-    name: 'Patricia Lebsack',
-    username: 'Karianne',
-    email: 'Julianne.OConner@kory.org'
+    name: 'Calcetines',
+    color: 'Rojo/blanco',
+    desc: 'Calcetines navideños.',
+    precio: '$300'
   },
   {
     id: 5,
-    name: 'Chelsey Dietrich',
-    username: 'Kamren',
-    email: 'Lucio_Hettinger@annie.ca'
+    name: 'Espejo',
+    color: 'Plateado',
+    desc: 'Espejo circular.',
+    precio: '$1000'
   },
   {
     id: 6,
-    name: 'Mrs. Dennis Schulist',
-    username: 'Leopoldo_Corkery',
-    email: 'Karley_Dach@jasper.info'
+    name: 'Maleta',
+    color: 'Arcoiris',
+    desc: 'Maleta mediana.',
+    precio: '$1800'
   },
   {
     id: 7,
-    name: 'Kurtis Weissnat',
-    username: 'Elwyn.Skiles',
-    email: 'Telly.Hoeger@billy.biz'
+    name: 'Libreta ecológica',
+    color: 'Café',
+    desc: 'Libreta ecológica.',
+    precio: '$100'
   },
   {
     id: 8,
-    name: 'Nicholas Runolfsdottir V',
-    username: 'Maxime_Nienow',
-    email: 'Sherwood@rosamond.me'
+    name: 'Cepillo',
+    color: 'Café',
+    desc: 'Juago de cepillos para cabello.',
+    precio: '$300'
   },
   {
     id: 9,
-    name: 'Glenna Reichert',
-    username: 'Delphine',
-    email: 'Chaim_McDermott@dana.io'
+    name: 'Esponja corporal',
+    color: 'Natural',
+    desc: 'Esponja corporal orgánica.',
+    precio: '$50'
   },
   {
     id: 10,
-    name: 'Clementina DuBuque',
-    username: 'Moriah.Stanton',
-    email: 'Rey.Padberg@karina.biz'
-  }
+    name: 'Libretas orgánicas',
+    color: 'Café',
+    desc: 'Juago de libretas orgánicas.',
+    precio: '$150'
+  },
 ];

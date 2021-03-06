@@ -17,12 +17,20 @@ const Footer = () => (
       </div>
 
         <div className="mt-4">
-            <ul className="text-center flex space-x-4">
+            <ul className="text-center flex space-x-4 mt-12 mb-16">
                 <Link href="/registro">
-                <li className="hover:underline focus:underline flex-1">Crear Cuenta</li>
+                  <li className="flex-1">
+                    <label className="label-btn">
+                      Crear cuenta
+                    </label>
+                  </li>
                 </Link>
-                <Link href="/iniciarsesion">
-                <li className="hover:underline focus:underline flex-1">Iniciar Sesión</li>
+                <Link href="/iniciar-sesion">
+                  <li className="flex-1">
+                    <label className="label-btn">
+                      Iniciar Sesión
+                    </label>
+                  </li>
                 </Link>
             </ul>
         </div>
