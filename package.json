@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.0.4",
-    "axios": "^0.21.2",
+    "axios": "^0.30.2",
     "formik": "^2.2.6",
     "next": "latest",
     "postcss": "^8.1.10",
